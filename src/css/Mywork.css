@@ -4,7 +4,10 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 80px auto;
+    padding: 0 clamp(20px, 8.85vw, 170px);
     box-sizing: border-box;
 }
 
@@ -28,23 +31,32 @@
 
 .mywork-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap:40px;
+    width: 100%;
 }
 
 .mywork-container img{
     box-sizing: border-box;
-    width: 419px;
-    height: 280px;
+    border-radius: 3%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.mywork-container img:hover{
+.mywork-container div:hover{
     transform: scale(1.10);
     box-shadow: 2px 2px 15px white, -2px -2px 15px white;
     border-radius: 10px;
     transition: 0.3s;
+}
+
+.mywork-container h4{
+    color: rgb(209, 204, 204);
+    text-align: center;
 }
 
 .mywork-showmore{
@@ -70,9 +82,9 @@
 @media (max-width:768px){
     .mywork{
         gap: 50px;
-        margin: 50px 20px;
+        margin: 50px auto;
+        padding: 0 20px;
         align-items: start;
-        width: calc(100% - 40px);
     }
     .mywork-title h1{
         font-size: 50px;
@@ -86,11 +98,8 @@
     .mywork-container{
         grid-template-columns: 1fr 1fr;
         gap: 30px;
-        width: 100%;
     }
     .mywork-container img{
-        width: 100%;
-        height: auto;
         max-width: 100%;
     }
     .mywork-showmore{
@@ -98,5 +107,12 @@
         font-size: 18px;
         margin: 50px auto;
         cursor: pointer;
+    }
+}
+
+@media (max-width:560px){
+    .mywork-container{
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }

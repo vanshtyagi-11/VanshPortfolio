@@ -4,7 +4,10 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 80px auto;
+    padding: 0 clamp(20px, 8.85vw, 170px);
     box-sizing: border-box;
 }
 
@@ -30,17 +33,21 @@
 .about-sections{
     display: flex;
     gap: 80px;
+    width: 100%;
 }
 
 .about-left img{
     width: 400px;
     height: 538px;
+    object-fit: cover;
 }
 
 .about-right{
     display: flex;
     flex-direction: column;
     gap: 80px;
+    flex: 1;
+    min-width: 0;
 }
 
 .about-para{
@@ -59,15 +66,15 @@
 }
 
 .about-skill{
-    display: flex;
-    gap: 35px;
+    display: grid;
+    grid-template-columns: minmax(150px, max-content) minmax(0, 1fr) 4ch;
+    gap: 20px;
     align-items: center;
     transition: 0.3s;
 
 }
 
 .about-skill p{
-    min-width: 150px;
     font-size: 24px;
     font-weight: 500;
 }
@@ -75,18 +82,17 @@
 .about-skill hr{
     outline: none;
     border: none;
-    width: 50%;
+    min-width: 0;
     height: 8px;
     border-radius: 50px;
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.62%);
-    flex-shrink: 0;
 }
 
 .about-achievements{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 80px;
+    gap: 24px;
 }
 
 .about-achievement{
@@ -96,6 +102,13 @@
     gap: 10px;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.about-achievements > hr{
+    flex: 0 0 1px;
+    width: 1px;
+    border: 0;
+    background: #5b5b5b;
 }
 
 .about-achievement h1{
@@ -110,6 +123,7 @@
 .about-achievement p{
     font-size: 22px;
     font-weight: 500;
+    text-align: center;
 }
 
 .about-achievement a{
@@ -127,12 +141,42 @@
     transition: 0.5s;
 }
 
+@media(max-width:1100px) and (min-width:769px){
+    .about-sections{
+        gap: 40px;
+    }
+    .about-left{
+        flex: 0 0 32%;
+    }
+    .about-left img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 400 / 538;
+    }
+    .about-right{
+        gap: 48px;
+    }
+    .about-para{
+        font-size: 20px;
+    }
+    .about-skill p{
+        min-width: 120px;
+        font-size: 20px;
+    }
+    .about-achievement h1{
+        font-size: 48px;
+    }
+    .about-achievement p{
+        font-size: 18px;
+    }
+}
+
 @media(max-width:768px){
     .about{
         gap: 80px;
-        margin: 50px 20px;
+        margin: 50px auto;
+        padding: 0 20px;
         align-items: start;
-        width: calc(100% - 40px);
     }
     .about-title h1{
         font-size: 50px;
@@ -160,19 +204,13 @@
         width: 100%;
     }
     .about-skill{
-        gap: 20px;
-        align-items: center;
         width: 100%;
     }
     .about-skill p{
         font-size: 20px;
-        min-width: 120px;
-        flex-shrink: 0;
     }
     .about-skill hr{
         height: 6px;
-        width: 50%;
-        flex-shrink: 0;
     }
     .about-achievements{
         justify-content: space-between;

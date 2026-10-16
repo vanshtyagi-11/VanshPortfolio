@@ -3,8 +3,11 @@
   align-items: center;
   flex-direction: column;
   gap: 35px;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 clamp(20px, 8.85vw, 170px);
 }
 
 .profile_img {
@@ -12,13 +15,15 @@
   width: 310px;
   height: 316px;
   border-radius: 50%;
+  box-shadow: 10px 10px 200px rgb(61, 61, 61), -10px -10px 200px rgb(60, 60, 60);
 }
 
 .hero h1 {
   text-align: center;
-  width: 80%;
+  width: min(100%, 1000px);
   font-size: 80px;
   font-weight: 500;
+  line-height: 1.15;
 }
 
 .hero h1 span {
@@ -29,7 +34,7 @@
 }
 
 .hero p {
-  width: 50%;
+  width: min(100%, 760px);
   text-align: center;
   font-size: 24px;
   line-height: 40px;
@@ -38,15 +43,18 @@
 .hero-action {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 25px;
   font-size: 24px;
   font-weight: 450;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .hero-connect {
-  margin: 25px 45px;
-  padding: 25px 65px;
+  margin: 0;
+  padding: 25px clamp(32px, 4vw, 65px);
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.62%);
   font-size: 22px;
@@ -73,8 +81,6 @@
 @media(max-width:768px){
   .hero {
     padding: 0 20px;
-    width: 100%;
-    max-width: 100%;
   }
   .hero img{
     margin-top: 120px;
@@ -88,13 +94,14 @@
     line-height: 1.2;
   }
   .hero p{
-    width: 90%;
+    width: 100%;
     font-size: 18px;
     line-height: 32px;
     margin: 10px 0;
   }
   .hero-action{
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 20px;
     font-size: 18px;
     font-weight: 500;
