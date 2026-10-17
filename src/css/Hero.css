@@ -15,7 +15,68 @@
   width: 310px;
   height: 316px;
   border-radius: 50%;
-  box-shadow: 10px 10px 200px rgb(61, 61, 61), -10px -10px 200px rgb(60, 60, 60);
+  box-shadow:
+    0 0 70px rgba(185, 35, 225, 0.42),
+    0 0 150px rgba(218, 124, 37, 0.24),
+    0 0 260px rgba(185, 35, 225, 0.12);
+}
+
+.hero > .profile_img,
+.hero > h1,
+.hero > p,
+.hero-action > .hero-connect,
+.hero-action > .hero-resume {
+  opacity: 0;
+  animation: hero-enter 0.7s ease-out forwards;
+}
+
+.hero > .profile_img {
+  animation: hero-profile-enter 1.2s ease-out 0.1s both;
+}
+
+.hero > h1 {
+  animation-delay: 0.3s;
+}
+
+.hero > p {
+  animation-delay: 0.5s;
+}
+
+.hero-action > .hero-connect {
+  animation-delay: 0.7s;
+}
+
+.hero-action > .hero-resume {
+  animation-delay: 0.9s;
+}
+
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-profile-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-28px);
+    box-shadow: 0 0 0 rgba(185, 35, 225, 0), 0 0 0 rgba(218, 124, 37, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow:
+      0 0 70px rgba(185, 35, 225, 0.42),
+      0 0 150px rgba(218, 124, 37, 0.24),
+      0 0 260px rgba(185, 35, 225, 0.12);
+  }
 }
 
 .hero h1 {
@@ -76,6 +137,18 @@
 .hero-resume:hover {
   border-color: black;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.62%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero > .profile_img,
+  .hero > h1,
+  .hero > p,
+  .hero-action > .hero-connect,
+  .hero-action > .hero-resume {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
 }
 
 @media(max-width:768px){

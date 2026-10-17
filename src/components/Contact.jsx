@@ -70,7 +70,7 @@ function Contact() {
               placeholder="Enter your message"
             ></textarea>
             <button type="submit" className="contact-submit">
-              Submit now
+              Send Message
             </button>
           </form>
         </div>

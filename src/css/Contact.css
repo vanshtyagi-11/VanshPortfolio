@@ -97,26 +97,36 @@
 }
 
 .contact-right input{
-    border: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.35);
     width: 100%;
     height: 78px;
     padding-left: 20px;
     border-radius: 4px;
-    background: #32323C;
+    background: transparent;
     color: #A0A0A0;
     font-family: Outfit;
     font-size: 20px;
+    transition: border-color 0.2s ease;
 }
 
 .contact-right textarea{
+    box-sizing: border-box;
     width: 100%;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.35);
     padding: 25px;
     border-radius: 4px;
-    background: #32323c;
+    background: transparent;
     color: #A0A0A0;
     font-family: Outfit;
     font-size: 20px;
+    transition: border-color 0.2s ease;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus{
+    border-color: rgba(218, 124, 37, 0.9);
+    outline: none;
 }
 
 .contact-submit{
@@ -182,11 +192,9 @@
     }
     .contact-right input{
         font-size: 18px;
-        box-sizing: border-box;
     }
     .contact-right textarea{
         font-size: 18px;
-        box-sizing: border-box;
     }
     .contact-submit{
         font-size: 20px;

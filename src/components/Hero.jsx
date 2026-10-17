@@ -15,11 +15,11 @@ const Hero = () => {
       <div id="hero" className="hero">
         <img src={profile} alt="" className="profile_img" />
         <h1>
-          <span>I'm Vansh Tyagi,</span> frontend devloper based in India.
+          <span>I'm Vansh Tyagi,</span> frontend developer based in India.
         </h1>
         <p>
-          I am frontend devloper from Uttar Pradesh, India, am Skilled in UI/UX
-          design, HTML, CSS, Javascript and, Reactjs.
+          I am a Web developer from Uttar Pradesh, India, skilled in JavaScript,
+          React.js, Node.js, Express.js, and MongoDB.
         </p>
         <div className="hero-action">
           <div className="hero-connect">

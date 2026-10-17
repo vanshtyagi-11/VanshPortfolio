@@ -1,84 +1,89 @@
 .footer{
     width: 100%;
     max-width: 1800px;
-    margin: 50px auto;
+    margin: 80px auto 0;
     padding: 0 clamp(20px, 8.85vw, 170px);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
     box-sizing: border-box;
 }
 
 .footer-top{
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
-
+    gap: 32px;
 }
 
 .footer-top-left p{
     font-size: 20px;
     max-width: 400px;
-}
-
-.footer-top-right{
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    flex: 0 1 60%;
-    min-width: 0;
-}
-
-.footer-email-input{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 20px 30px;
-    border-radius: 50px;
-    background: #32323B;
-    flex: 1;
-    min-width: 0;
-}
-
-.footer-email-input input{
-    outline: none;
-    border: none;
-    background: transparent;
-    color: #A0A0A0;
-    font-family: Outfit;
-    font-size: 18px;
-    width: 100%;
-    min-width: 0;
-}
-
-.footer-subscribe{
-    font-size: 20px;
-    padding: 22px 50px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.62%);
-    cursor: pointer;
-    transition: 0.3s;
+    color: #D8D8D8;
 }
 
 .footer-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
-    font-size: 18px;
+    gap: 20px;
+    color: #A0A0A0;
+    font-size: 15px;
 }
 
 .footer-bottom-right{
     display: flex;
-    gap: clamp(16px, 3vw, 50px);
+    align-items: center;
+    gap: 28px;
 }
 
-.footer-email-input:hover{
-    border: 2px solid white;
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
 }
 
-.footer-subscribe:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
+.footer-social > p{
+    color: #D8D8D8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-social-links{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social-links a{
+    display: flex;
+    color: #D8D8D8;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 50%;
+    transition: color 0.25s, border-color 0.25s, background 0.25s, transform 0.25s;
+}
+
+.footer-social-links a:hover{
+    color: white;
+    border-color: transparent;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.62%);
+    transform: translateY(-3px);
+}
+
+.footer-social-links svg{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-divider{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .footer-top-left-logo{
@@ -102,58 +107,38 @@
 
 @media(max-width:768px){
     .footer{
-        margin: 50px auto;
+        margin: 60px auto 0;
         padding: 0 20px;
     }
     .footer-top{
         flex-direction: column;
-        gap: 50px;
+        align-items: flex-start;
+        gap: 28px;
     }
     .footer-top-left p{
         font-size: 18px;
         max-width: 100%;
     }
-    .footer-top-right{
-        flex-direction: column;
+    .footer-social{
         align-items: flex-start;
-        gap: 20px;
-        width: 100%;
-        flex: auto;
-    }
-    .footer-email-input{
-        width: 100%;
-        padding: 15px 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
-    .footer-email-input input{
-        width: 100%;
-        font-size: 16px;
-    }
-    .footer-subscribe{
-        font-size: 18px;
-        padding: 18px 40px;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
     }
     .footer-bottom{
-        display: flex;
         flex-direction: column-reverse;
-        gap: 20px;
-        font-size: 16px;
+        align-items: flex-start;
+        gap: 16px;
     }
     .footer-bottom-right{
-        flex-direction: column;
-        gap: 15px;
+        flex-wrap: wrap;
+        gap: 18px;
     }
 }
 
 @media(max-width:480px){
-    .footer-email-input{
-        padding: 15px 16px;
-    }
     .footer-bottom{
-        align-items: flex-start;
+        font-size: 14px;
+    }
+    .footer-bottom-right{
+        flex-wrap: wrap;
+        gap: 12px 20px;
     }
 }

@@ -18,7 +18,8 @@ function About() {
             <div className="about-para">
               <p>
                 I am experienced frontend Devloper with professional skills in
-                the field. Throughout my College time, I have had the privilege
+                the field and wants to become a{" "}
+                <strong>Full Stack Developer</strong>. Throughout my College time, I have had the privilege
                 of collaborating in many real-world projects, contributing to my
                 success and growth.
               </p>
@@ -32,27 +33,27 @@ function About() {
               <div className="about-skill">
                 <p>Javascript</p>
                 <hr style={{ width: "85%" }} />
-                85%
+                <span className="about-skill-level">85%</span>
               </div>
               <div className="about-skill">
                 <p>React JS</p>
                 <hr style={{ width: "80%" }} />
-                80%
+                <span className="about-skill-level">80%</span>
               </div>
               <div className="about-skill">
                 <p>NodeJS</p>
                 <hr style={{ width: "72%" }} />
-                72%
+                <span className="about-skill-level">72%</span>
               </div>
               <div className="about-skill">
                 <p>ExpressJS</p>
                 <hr style={{ width: "70%" }} />
-                70%
+                <span className="about-skill-level">70%</span>
               </div>
               <div className="about-skill">
                 <p>MongoDB</p>
                 <hr style={{ width: "60%" }} />
-                60%
+                <span className="about-skill-level">60%</span>
               </div>
             </div>
           </div>

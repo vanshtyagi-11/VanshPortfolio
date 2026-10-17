@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" fill="none">
+  <defs>
+    <linearGradient id="logo-gradient" x1="4" y1="12" x2="68" y2="73" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B923E1"/>
+      <stop offset="1" stop-color="#DA7C25"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="10" width="66" height="66" rx="22" fill="url(#logo-gradient)"/>
+  <path
+    d="M20 29L36.5 58L54 29"
+    stroke="#FFFDF8"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="60" cy="19" r="4" fill="#FFFDF8"/>
+  <text
+    x="83"
+    y="60"
+    fill="#FFFDF8"
+    font-family="Trebuchet MS, Arial, sans-serif"
+    font-size="47"
+    font-weight="700"
+    letter-spacing="-2"
+  >Vansh</text>
+  <path d="M86 70H142" stroke="url(#logo-gradient)" stroke-width="3.5" stroke-linecap="round"/>
+</svg>
