@@ -1,5 +1,5 @@
 import "../css/Footer.css";
-import theme_pattern from "../assets/theme_pattern.svg";
+import logo from "../assets/logo.svg";
 
 function Footer() {
   return (
@@ -7,8 +7,7 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-top-left">
           <div className="footer-top-left-logo">
-            <h5>Vansh</h5>
-            <img src={theme_pattern} alt="" width="20%" />
+            <img src={logo} alt="Vansh" />
           </div>
           <p>I am frontend devloper from Meerut, Uttar Pradesh (India).</p>
         </div>
