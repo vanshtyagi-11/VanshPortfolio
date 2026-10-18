@@ -15,8 +15,10 @@ function Mywork() {
           {mywork_data.map((Worker, index) => {
             return (
               <div>
-                <img key={index} src={Worker.w_img} alt="" />
-                <h4>{Worker.w_name}</h4>
+                <a href={Worker.w_link}>
+                  <img key={index} src={Worker.w_img} alt="" />
+                  <h4>{Worker.w_name}</h4>
+                </a>
               </div>
             );
           })}

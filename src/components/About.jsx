@@ -19,9 +19,9 @@ function About() {
               <p>
                 I am experienced frontend Devloper with professional skills in
                 the field and wants to become a{" "}
-                <strong>Full Stack Developer</strong>. Throughout my College time, I have had the privilege
-                of collaborating in many real-world projects, contributing to my
-                success and growth.
+                <strong>Full Stack Developer</strong>. Throughout my College
+                time, I have had the privilege of collaborating in many
+                real-world projects, contributing to my success and growth.
               </p>
               <p>
                 My passion for frontend devlopment is not only reflected in my
@@ -61,14 +61,16 @@ function About() {
         <div className="about-achievements">
           <div className="about-achievement">
             <a href="https://www.oneroadmap.io/profile/vansh-tyagi">
-            <h1>80+ </h1>
+              <h1>80+ </h1>
               <p>scores frontend skills test</p>
             </a>
           </div>
           <hr />
           <div className="about-achievement">
-            <h1>10+</h1>
-            <p>Collaborating projects.</p>
+            <a href="https://github.com/vanshtyagi-11">
+              <h1>10+</h1>
+              <p>Collaborating projects.</p>
+            </a>
           </div>
           <hr />
           <div className="about-achievement">

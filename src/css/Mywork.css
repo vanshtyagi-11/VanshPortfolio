@@ -59,6 +59,12 @@
     text-align: center;
 }
 
+.mywork-container a{
+    text-align: center;
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
 .mywork-showmore{
     display: flex;
     gap: 15px;

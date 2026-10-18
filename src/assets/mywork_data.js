@@ -9,32 +9,38 @@ const mywork_data = [
     {
         w_no:1,
         w_name:"Work Flow Management",
-        w_img:project1_img
+        w_img:project1_img,
+        w_link:'https://engage-flow.vercel.app/'
     },
     {
         w_no:2,
         w_name:"Entertain",
-        w_img:project2_img
+        w_img:project2_img,
+        w_link:'https://vanshtyagi-11.github.io/Entertainment-App_1/'
     },
     {
         w_no:3,
         w_name:"Airbnb",
-        w_img:project3_img
+        w_img:project3_img,
+        w_link:'https://github.com/vanshtyagi-11/Airbnb-app'
     },
     {
         w_no:4,
         w_name:"Spotify",
-        w_img:project4_img
+        w_img:project4_img,
+        w_link:'https://github.com/vanshtyagi-11/spotify-clone'
     },
     {
         w_no:5,
         w_name:"Car Rental",
-        w_img:project5_img
+        w_img:project5_img,
+        w_link:'https://github.com/vanshtyagi-11/car-rental-app'
     },
     {
         w_no:6,
         w_name:"College Website",
-        w_img:project6_img
+        w_img:project6_img,
+        w_link:'https://vanshtyagi-11.github.io/edusity-university-website/'
     },
 ]
  

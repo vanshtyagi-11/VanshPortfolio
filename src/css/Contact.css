@@ -77,6 +77,11 @@
     flex-shrink: 0;
 }
 
+.contact-instagram{
+    color: inherit;
+    text-decoration: none;
+}
+
 .contact-detail p{
     overflow-wrap: anywhere;
 }

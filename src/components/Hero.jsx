@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   const resumeLink =
-    "https://drive.google.com/file/d/1qrROBta1GPE5qsKeSptwG2GVhmk1UE4F/view?usp=drivesdk";
+    "https://drive.google.com/file/d/1KbAJQeOeUOkc6GNo7COTpmYufhZTiOkq/view?usp=drivesdk";
 
   const handleResumeClick = () => {
     window.open(resumeLink, "_blank");

@@ -3,6 +3,7 @@ import theme_pattern from "../assets/theme_pattern.svg";
 import mail_icon from "../assets/mail_icon.svg";
 import location_icon from "../assets/location_icon.svg";
 import call_icon from "../assets/call_icon.svg";
+import instagram_icon from "../assets/instagram_icon.svg";
 
 function Contact() {
   const onSubmit = async (event) => {
@@ -52,6 +53,16 @@ function Contact() {
                 <img src={call_icon} alt="" />
                 <p>+91 9389337217</p>
               </div>
+              <a
+                className="contact-detail contact-instagram"
+                href="https://www.instagram.com/__vansh__tyagi___"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram profile: __vansh__tyagi___"
+              >
+                <img src={instagram_icon} alt="" />
+                <p>__vansh__tyagi___</p>
+              </a>
               <div className="contact-detail">
                 <img src={location_icon} alt="" />
                 <p>Meerut, Uttar pradesh (india)</p>
