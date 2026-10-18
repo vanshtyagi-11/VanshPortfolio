@@ -60,8 +60,8 @@ function About() {
         </div>
         <div className="about-achievements">
           <div className="about-achievement">
+            <a href="https://www.oneroadmap.io/profile/vansh-tyagi">
             <h1>80+ </h1>
-            <a href="https://www.oneroadmap.io/skills/node/certificate/CERT-0AF94E84">
               <p>scores frontend skills test</p>
             </a>
           </div>
